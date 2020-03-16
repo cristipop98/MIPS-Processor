@@ -1,0 +1,486 @@
+
+*** Running vivado
+    with args -log test_if.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source test_if.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source test_if.tcl -notrace
+Command: synth_design -top test_if -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7212 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 340.246 ; gain = 71.410
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'test_if' [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/test_if.vhd:47]
+INFO: [Synth 8-3491] module 'Monoimpuls' declared at 'C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/Monoimpuls.vhd:36' bound to instance 'D' of component 'Monoimpuls' [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/test_if.vhd:160]
+INFO: [Synth 8-638] synthesizing module 'Monoimpuls' [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/Monoimpuls.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'Monoimpuls' (1#1) [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/Monoimpuls.vhd:43]
+INFO: [Synth 8-3491] module 'Monoimpuls' declared at 'C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/Monoimpuls.vhd:36' bound to instance 'D1' of component 'Monoimpuls' [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/test_if.vhd:161]
+INFO: [Synth 8-3491] module 'INSTR_IF' declared at 'C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/INSTR_IF.vhd:36' bound to instance 'I1' of component 'INSTR_IF' [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/test_if.vhd:166]
+INFO: [Synth 8-638] synthesizing module 'INSTR_IF' [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/INSTR_IF.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'INSTR_IF' (2#1) [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/INSTR_IF.vhd:51]
+INFO: [Synth 8-3491] module 'ID' declared at 'C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/ID.vhd:36' bound to instance 'I2' of component 'ID' [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/test_if.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'ID' [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/ID.vhd:53]
+INFO: [Synth 8-3491] module 'Reg_file' declared at 'C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/Reg_file.vhd:37' bound to instance 'RF1' of component 'Reg_file' [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/ID.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'Reg_file' [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/Reg_file.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'Reg_file' (3#1) [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/Reg_file.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'ID' (4#1) [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/ID.vhd:53]
+INFO: [Synth 8-3491] module 'SSD' declared at 'C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/SSD.vhd:36' bound to instance 'S' of component 'SSD' [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/test_if.vhd:176]
+INFO: [Synth 8-638] synthesizing module 'SSD' [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/SSD.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'SSD' (5#1) [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/SSD.vhd:44]
+INFO: [Synth 8-3491] module 'Ex' declared at 'C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/Ex.vhd:36' bound to instance 'E' of component 'Ex' [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/test_if.vhd:177]
+INFO: [Synth 8-638] synthesizing module 'Ex' [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/Ex.vhd:52]
+WARNING: [Synth 8-614] signal 'Ext_Imm' is read in the process but is not in the sensitivity list [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/Ex.vhd:79]
+WARNING: [Synth 8-3848] Net Zero in module/entity Ex does not have driver. [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/Ex.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'Ex' (6#1) [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/Ex.vhd:52]
+INFO: [Synth 8-3491] module 'Mem' declared at 'C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/Mem.vhd:36' bound to instance 'M' of component 'Mem' [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/test_if.vhd:178]
+INFO: [Synth 8-638] synthesizing module 'Mem' [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/Mem.vhd:49]
+INFO: [Synth 8-3491] module 'RAM' declared at 'C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/RAM.vhd:37' bound to instance 'R' of component 'RAM' [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/Mem.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'RAM' [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/RAM.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'RAM' (7#1) [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/RAM.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'Mem' (8#1) [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/Mem.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/test_if.vhd:266]
+WARNING: [Synth 8-614] signal 'instruction' is read in the process but is not in the sensitivity list [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/test_if.vhd:264]
+WARNING: [Synth 8-614] signal 'next_pc' is read in the process but is not in the sensitivity list [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/test_if.vhd:264]
+WARNING: [Synth 8-614] signal 'rd1' is read in the process but is not in the sensitivity list [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/test_if.vhd:264]
+WARNING: [Synth 8-614] signal 'rd2' is read in the process but is not in the sensitivity list [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/test_if.vhd:264]
+WARNING: [Synth 8-614] signal 'wd' is read in the process but is not in the sensitivity list [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/test_if.vhd:264]
+WARNING: [Synth 8-614] signal 'extImm' is read in the process but is not in the sensitivity list [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/test_if.vhd:264]
+WARNING: [Synth 8-614] signal 'AluRes' is read in the process but is not in the sensitivity list [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/test_if.vhd:264]
+WARNING: [Synth 8-614] signal 'MemData' is read in the process but is not in the sensitivity list [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/test_if.vhd:264]
+INFO: [Synth 8-256] done synthesizing module 'test_if' (9#1) [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/test_if.vhd:47]
+WARNING: [Synth 8-3917] design test_if has port led[6] driven by constant 0
+WARNING: [Synth 8-3917] design test_if has port led[1] driven by constant 0
+WARNING: [Synth 8-3331] design RAM has unconnected port addr[15]
+WARNING: [Synth 8-3331] design RAM has unconnected port addr[14]
+WARNING: [Synth 8-3331] design RAM has unconnected port addr[13]
+WARNING: [Synth 8-3331] design RAM has unconnected port addr[12]
+WARNING: [Synth 8-3331] design RAM has unconnected port addr[11]
+WARNING: [Synth 8-3331] design RAM has unconnected port addr[10]
+WARNING: [Synth 8-3331] design RAM has unconnected port addr[9]
+WARNING: [Synth 8-3331] design RAM has unconnected port addr[8]
+WARNING: [Synth 8-3331] design RAM has unconnected port addr[7]
+WARNING: [Synth 8-3331] design RAM has unconnected port addr[6]
+WARNING: [Synth 8-3331] design RAM has unconnected port addr[5]
+WARNING: [Synth 8-3331] design RAM has unconnected port addr[4]
+WARNING: [Synth 8-3331] design Ex has unconnected port Zero
+WARNING: [Synth 8-3331] design Ex has unconnected port sa
+WARNING: [Synth 8-3331] design Ex has unconnected port func[2]
+WARNING: [Synth 8-3331] design Ex has unconnected port func[1]
+WARNING: [Synth 8-3331] design Ex has unconnected port func[0]
+WARNING: [Synth 8-3331] design ID has unconnected port instructiune[15]
+WARNING: [Synth 8-3331] design ID has unconnected port instructiune[14]
+WARNING: [Synth 8-3331] design ID has unconnected port instructiune[13]
+WARNING: [Synth 8-3331] design ID has unconnected port en
+WARNING: [Synth 8-3331] design test_if has unconnected port led[15]
+WARNING: [Synth 8-3331] design test_if has unconnected port led[14]
+WARNING: [Synth 8-3331] design test_if has unconnected port led[13]
+WARNING: [Synth 8-3331] design test_if has unconnected port led[12]
+WARNING: [Synth 8-3331] design test_if has unconnected port led[11]
+WARNING: [Synth 8-3331] design test_if has unconnected port led[10]
+WARNING: [Synth 8-3331] design test_if has unconnected port led[9]
+WARNING: [Synth 8-3331] design test_if has unconnected port led[8]
+WARNING: [Synth 8-3331] design test_if has unconnected port btn[3]
+WARNING: [Synth 8-3331] design test_if has unconnected port btn[2]
+WARNING: [Synth 8-3331] design test_if has unconnected port sw[15]
+WARNING: [Synth 8-3331] design test_if has unconnected port sw[14]
+WARNING: [Synth 8-3331] design test_if has unconnected port sw[13]
+WARNING: [Synth 8-3331] design test_if has unconnected port sw[12]
+WARNING: [Synth 8-3331] design test_if has unconnected port sw[11]
+WARNING: [Synth 8-3331] design test_if has unconnected port sw[10]
+WARNING: [Synth 8-3331] design test_if has unconnected port sw[9]
+WARNING: [Synth 8-3331] design test_if has unconnected port sw[8]
+WARNING: [Synth 8-3331] design test_if has unconnected port sw[4]
+WARNING: [Synth 8-3331] design test_if has unconnected port sw[3]
+WARNING: [Synth 8-3331] design test_if has unconnected port sw[2]
+WARNING: [Synth 8-3331] design test_if has unconnected port sw[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 396.949 ; gain = 128.113
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 396.949 ; gain = 128.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 396.949 ; gain = 128.113
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Cristi/tema1/txt.xdc]
+WARNING: [Vivado 12-584] No ports matched 'btn[4]'. [C:/Users/Cristi/tema1/txt.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Cristi/tema1/txt.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[4]'. [C:/Users/Cristi/tema1/txt.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Cristi/tema1/txt.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Cristi/tema1/txt.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Cristi/tema1/txt.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/test_if_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/test_if_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 715.793 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 715.793 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 715.793 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 715.793 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 715.793 ; gain = 446.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 715.793 ; gain = 446.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 715.793 ; gain = 446.957
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "rom" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element q_reg_rep was removed.  [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/INSTR_IF.vhd:77]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Cristi/MIPS/MIPS.srcs/sources_1/new/Ex.vhd:81]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 715.793 ; gain = 446.957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 3     
+	   3 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---RAMs : 
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	  17 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 4     
+	   6 Input     16 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module test_if 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Muxes : 
+	   6 Input      3 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 6     
+Module Monoimpuls 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module INSTR_IF 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  17 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+Module ID 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+Module SSD 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+Module Ex 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 1     
+Module RAM 
+Detailed RTL Component Info : 
++---RAMs : 
+	              256 Bit         RAMs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design test_if has port led[6] driven by constant 0
+WARNING: [Synth 8-3917] design test_if has port led[1] driven by constant 0
+WARNING: [Synth 8-3331] design test_if has unconnected port led[15]
+WARNING: [Synth 8-3331] design test_if has unconnected port led[14]
+WARNING: [Synth 8-3331] design test_if has unconnected port led[13]
+WARNING: [Synth 8-3331] design test_if has unconnected port led[12]
+WARNING: [Synth 8-3331] design test_if has unconnected port led[11]
+WARNING: [Synth 8-3331] design test_if has unconnected port led[10]
+WARNING: [Synth 8-3331] design test_if has unconnected port led[9]
+WARNING: [Synth 8-3331] design test_if has unconnected port led[8]
+WARNING: [Synth 8-3331] design test_if has unconnected port btn[3]
+WARNING: [Synth 8-3331] design test_if has unconnected port btn[2]
+WARNING: [Synth 8-3331] design test_if has unconnected port sw[15]
+WARNING: [Synth 8-3331] design test_if has unconnected port sw[14]
+WARNING: [Synth 8-3331] design test_if has unconnected port sw[13]
+WARNING: [Synth 8-3331] design test_if has unconnected port sw[12]
+WARNING: [Synth 8-3331] design test_if has unconnected port sw[11]
+WARNING: [Synth 8-3331] design test_if has unconnected port sw[10]
+WARNING: [Synth 8-3331] design test_if has unconnected port sw[9]
+WARNING: [Synth 8-3331] design test_if has unconnected port sw[8]
+WARNING: [Synth 8-3331] design test_if has unconnected port sw[4]
+WARNING: [Synth 8-3331] design test_if has unconnected port sw[3]
+WARNING: [Synth 8-3331] design test_if has unconnected port sw[2]
+WARNING: [Synth 8-3331] design test_if has unconnected port sw[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 715.793 ; gain = 446.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+---------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object          | Inference | Size (Depth x Width) | Primitives      | 
++------------+---------------------+-----------+----------------------+-----------------+
+|test_if     | I2/RF1/reg_file_reg | Implied   | 8 x 16               | RAM32M x 6      | 
+|test_if     | M/R/RAM_reg         | Implied   | 16 x 16              | RAM16X1S x 16   | 
++------------+---------------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 715.793 ; gain = 446.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 716.016 ; gain = 447.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+---------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object          | Inference | Size (Depth x Width) | Primitives      | 
++------------+---------------------+-----------+----------------------+-----------------+
+|test_if     | I2/RF1/reg_file_reg | Implied   | 8 x 16               | RAM32M x 6      | 
+|test_if     | M/R/RAM_reg         | Implied   | 16 x 16              | RAM16X1S x 16   | 
++------------+---------------------+-----------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 730.723 ; gain = 461.887
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 730.723 ; gain = 461.887
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 730.723 ; gain = 461.887
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 730.723 ; gain = 461.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 730.723 ; gain = 461.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 730.723 ; gain = 461.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 730.723 ; gain = 461.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    24|
+|3     |LUT1     |     3|
+|4     |LUT2     |    23|
+|5     |LUT3     |     1|
+|6     |LUT4     |    39|
+|7     |LUT5     |    48|
+|8     |LUT6     |    57|
+|9     |RAM16X1S |    16|
+|10    |RAM32M   |     6|
+|11    |FDRE     |    58|
+|12    |IBUF     |     7|
+|13    |OBUF     |    19|
+|14    |OBUFT    |     8|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------+-------------+------+
+|      |Instance |Module       |Cells |
++------+---------+-------------+------+
+|1     |top      |             |   310|
+|2     |  D      |Monoimpuls   |    29|
+|3     |  D1     |Monoimpuls_0 |     4|
+|4     |  E      |Ex           |    10|
+|5     |  I1     |INSTR_IF     |   113|
+|6     |  I2     |ID           |    45|
+|7     |    RF1  |Reg_file     |    45|
+|8     |  M      |Mem          |    32|
+|9     |    R    |RAM          |    32|
+|10    |  S      |SSD          |    41|
++------+---------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 730.723 ; gain = 461.887
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 730.723 ; gain = 143.043
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 730.723 ; gain = 461.887
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 46 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 736.270 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 22 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 16 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 82 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 736.270 ; gain = 467.434
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 736.270 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Cristi/MIPS/MIPS.runs/synth_1/test_if.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file test_if_utilization_synth.rpt -pb test_if_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 18 21:19:35 2019...
